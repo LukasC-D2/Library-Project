@@ -5,6 +5,7 @@ import { AuthProvider } from './services/AuthContext';
 import Navbar from "./components/pages/Navbar";
 import Login from './components/pages/Login';
 import Registration from "./components/pages/Registration";
+import Home from "./components/pages/bookDashboard/Home";
 
 import "./styles/LoginAndRegistration.css";
 
@@ -19,6 +20,7 @@ import "./styles/LoginAndRegistration.css";
               <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Registration />} />
+                <Route path="/" element={<PrivateRoute roles={['User', 'Admin']}><Home /></PrivateRoute>} />
               </Routes>
             </div>
           </div>
