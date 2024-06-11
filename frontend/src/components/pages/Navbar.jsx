@@ -1,7 +1,7 @@
-import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../services/AuthContext";
 import "../../styles/Navbar.css";
+import icon from "../../../book.png"
 
 const Navbar = () => {
   const { token, user, logoutUser } = useAuth(); // Access token and logoutUser method from AuthContext
@@ -14,13 +14,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1>Library</h1>
+      <Link to="/" className="icon"><img src={icon} alt="icon" width={40} height={40}/></Link>
       <div className="links">
-        <Link to="/">Home</Link>
         {token && (
           <>
-            <Link to="/list">All Projects</Link>
-            <Link to="/create">New Project</Link>
+            {/* <Link to="/categories" className="homePage">Categories</Link> */}
             <span className="user-name">{user.name}</span>
             <button onClick={handleLogout}>Logout</button>
           </>

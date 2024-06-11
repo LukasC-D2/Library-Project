@@ -1,25 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* base styles */
 * {
   margin: 0;
   font-family: "Montserrat";
   color: #000000;
 }
-/* .navbar {
-  position: static;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ffffff;
-} */
 
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%; /* Ensures the navbar spans the entire width of the page */
+  height: 10%;
   padding: 25px;
   display: flex;
   align-items: center;
@@ -35,9 +27,6 @@
   padding: 15px;
 }
 
-.navbar h1 {
-  color: #000000;
-}
 .navbar .links {
   margin-left: auto;
 }
@@ -50,11 +39,6 @@
   color: #ffffff;
   background-color: #007ACC;
   border-radius: 10px;
-}
-.content {
-  /* margin: 10px auto; */
-  padding: 20px;
-
 }
 
 /* logout button */
@@ -74,4 +58,9 @@
   color: #E4DBFE;
   background-color: #0089E6;
   border-radius: 10px;
+}
+
+.icon {
+ 
+  
 }
